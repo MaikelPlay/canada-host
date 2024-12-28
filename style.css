@@ -1,0 +1,164 @@
+@import './assets/fonts/fonts.css';
+@import './styles_no_modificar.css';
+
+/* RESET -------------------------------------------------------- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: none;
+    padding: 0;
+}
+body {
+    background-color: #e0e0e0;
+    line-height: 24px;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;    
+    font-weight: 400;
+    color: #333;    
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: Oswald, sans-serif;
+    font-weight: 400;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* PARA VER BORDES ---------------------------------------------- 
+
+body * {
+    border: 1px solid #00ff00;
+}
+*/
+/* "SISTEMA DE REJILLA" ----------------------------------------- */
+
+/*** 1) .row ***/
+.row {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*** 2) .clearfix ***/
+.clearfix {
+    clear: both;
+}
+
+/* HEADER AREA ------------------------------------------------- */
+
+/*** 3) .header-logo  ***/
+.header-logo { 
+    text-align: center;
+}
+
+/*** 4) .logo ***/
+.logo {
+    line-height: 0; /* Elimina el espacio vertical */
+    display: inline-block;
+    padding: 22px 0px; /* para dar espacio cuando se clicke encima del logo y que sea un poco mas hacia arriba y abajo y no solo en el logo.
+    /*cursor: pointer;*/
+}
+
+/*** 5) .header-menu ***/
+.header-menu {
+    width: 100%;
+    text-align: center;
+    
+    
+}
+
+/*** 6) .menu-item ***/
+.header-menu .menu-item {
+    padding: 23px 13px 20px;
+    border-bottom: 3px solid transparent; /* se pone para dejar ya el espacio y cuando se haga el hover sea igual y no se desplace*/
+    display: inline-block;
+    
+}
+
+
+/*** 6) Al pasar el ratón por encima de un enlace con la clase "menu-item" ... ***/
+.header-menu .menu-item:hover{
+    color: #ed1b24;
+    border-bottom: 3px solid #ed1b24;
+}
+
+/*** 6) El último  enlace de la  clase "menu-item" ... ***/
+.header-menu .menu-item:last-child {
+    color: #ed1b24;
+}
+
+/*** 7)  Enlaces con las clases "menu-item" y "active" a la vez ***/
+.header-menu .menu-item.active {
+    border-bottom: 3px solid #ed1b24;
+}
+
+/* PLANS AREA  ------------------------------------------------- */
+
+/*** 8) .plans-wrapper ***/
+.plans-wrapper {
+    padding: 0px 75px;
+}
+
+/*** 9) .plan-item ***/
+.plan-item {
+    float:left;
+    width: 33.33333%;
+    margin-top: 45px;
+    padding: 40px;
+    text-align: center;
+    background-color: #fff;
+}
+
+/*** 10) .start-price ***/
+.plan-item .plan-pricing .start-price {
+    margin-top: 5px;
+    display: block; /* Asegura que la caja ocupe el 100% de la anchura del contenedor, anteriormente el precio aparece al lado por ser de serie inlineblock*/
+    line-height: 56px;   
+    font-size: 48px;
+}
+
+/*** 11) .plan-order ***/
+.plan-item .plan-order {
+    padding-bottom: 30px;
+    border-bottom: 1px dotted #303030;
+    margin-bottom: 30px;
+}
+
+/*** 11) Al pasar el ratón por encima de los enlaces con la clase .btn-order (descendientes de .plan-order y .plan-item) ... ***/
+.btn-order .plan-order .plan-item:hover {
+    color:#303030;
+}
+
+/*** 12) .avatar ***/
+.plan-item .plan-info .avatar {
+    float:left;
+    width: 50px;
+    height: 50px;
+    margin: 4px 16px 8px 0;
+    border-radius: 15px;
+}
+
+/*** 13) La caja con las clases .plan-item y .popular a la vez no debe tener separación superior, y debe tener #fff como color de letra.... ***/
+.plan-item.popular {
+    margin-top: 0;
+
+    color: #fff;
+    background-color: #ed1b24;
+}
+
+/*** 14) .plan-popular-tag.***/ 
+
+.plan-item.popular .plan-popular-tag {
+    display:inline-block;
+    height: 44px;
+    margin-bottom: 30px;
+    padding: 9px 30px;
+
+    background-color: #fff;
+    color: #ed1b24;     
+    font-family: Oswald, sans-serif;
+    font-size: 36px;
+
+}

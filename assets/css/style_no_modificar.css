@@ -1,0 +1,50 @@
+
+/* UTILIDADES --------------------------------------------------- */
+
+.btn {
+    display: inline-block;
+    border: 1px solid #fff;
+    padding: 10px 25px;
+    font-family: Oswald, sans-serif; 
+    color: #fff;   
+}
+
+/* HEADER AREA ------------------------------------------------- */
+
+#header {
+    background-color: #303030;    
+}
+
+/* PLANS AREA  ------------------------------------------------- */
+
+#plans {
+    padding: 100px 0;
+}
+
+.plan-item:hover, .plan-item.popular {
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, .14), 0 6px 30px 5px rgba(0, 0, 0, .12), 0 8px 10px -5px rgba(0, 0, 0, .2);
+}
+
+.plan-item .plan-header {
+    font-size: 36px;
+    line-height: 40px;
+    color: #303030;
+}
+
+.plan-item .plan-pricing {
+    margin-bottom: 20px;    
+    padding: 18px 0 15px;
+    font-size: 16px;
+    color: #303030;
+}
+
+.plan-item .plan-order .btn-order {
+    border: 1px solid #e0e0e0;
+    background-color: #e0e0e0; 
+    color: #303030;
+}
+
+.plan-item .plan-info .info-text {
+    text-align: justify;
+}
+

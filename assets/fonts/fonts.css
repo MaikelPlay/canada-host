@@ -1,0 +1,16 @@
+
+@font-face {
+    font-family: "Roboto";
+    src: url('./roboto/Roboto-Regular.ttf');
+    src: url('./roboto/Roboto-Regular.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: url('./oswald/static/Oswald-Regular.ttf');
+    src: url('./oswald/static/Oswald-Regular.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
